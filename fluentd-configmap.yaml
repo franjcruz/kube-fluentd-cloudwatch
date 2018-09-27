@@ -31,8 +31,8 @@ data:
 
     <match kubernetes.**>
       @type cloudwatch_logs
-      log_group_name_key pod_name
-      log_stream_name_key container_name
+      log_group_name_key container_name
+      log_stream_name_key pod_name
       auto_create_stream true
       put_log_events_retry_limit 20
     </match>
